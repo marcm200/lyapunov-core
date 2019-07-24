@@ -12,7 +12,6 @@
 #include "math.h"
 #include "stdlib.h"
 #include "stdint.h"
-#include "omp.h"
 
 
 // const definitions
@@ -105,7 +104,7 @@ struct FunctionI : public Function {
 };
 
 struct FunctionII : public Function {
-	// f=b*sin²(x+r)
+	// f=b*sinÂ²(x+r)
 	// g=f'
 	double b,b2;
 
@@ -486,9 +485,9 @@ char* upper(char* s) {
 	if (!s) return 0;
 	for(uint32_t i=0;i<strlen(s);i++) {
 		if ((s[i]>='a')&&(s[i]<='z')) s[i]=s[i]-'a'+'A';
-		if (s[i]=='ö') s[i]='Ö';
-		if (s[i]=='ü') s[i]='Ü';
-		if (s[i]=='ä') s[i]='Ä';
+		if (s[i]=='Ã¶') s[i]='Ã–';
+		if (s[i]=='Ã¼') s[i]='Ãœ';
+		if (s[i]=='Ã¤') s[i]='Ã„';
 	}
 
 	return s;
@@ -2053,7 +2052,7 @@ int32_t main(int32_t argc,char** argv) {
 			char tmp[1024];
 			const double i0START=-1.0;
 			const double bis=1.0;
-			const double delta=0.2;
+			const double delta=0.5;
 
 			for(double i0min=i0START;i0min < bis;i0min += delta) {
 				printf("i0=%f to %f\n",i0min,bis);
@@ -2138,7 +2137,7 @@ int32_t main(int32_t argc,char** argv) {
 				hierp->abl=ablp;
 
 				IterDouble itd(b0,b1,n);
-				ljap->fkt->set_iterb(&itd); // auch bei eigentlich nicht unterstützenden Functionen
+				ljap->fkt->set_iterb(&itd); // auch bei eigentlich nicht unterstÃ¼tzenden Functionen
 
 				for(int32_t fwas=1;fwas<=2;fwas++) for(int32_t ablwas=1;ablwas<=2;ablwas++) {
 					ljap->iterStart();
@@ -2222,6 +2221,3 @@ int32_t main(int32_t argc,char** argv) {
 
 	return 0;
 }
-
-
-
