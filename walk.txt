@@ -1,0 +1,22 @@
+#use as skript by: lyapunov.exe <walk.txt
+load(02template
+setsize(256,256
+setiter(50,100
+walktile(3,3
+load(03template
+setsize(256,256
+setiter(50,100
+walkseq(10,12
+load(16template
+setsize(128,128
+setiter(50,100
+walkdet(2,1,10,1,4,4
+load(17template
+setsize(128,128
+setiter(50,100
+walksection
+load(18template
+#no size change as the already loaded Lyapunov values are just saved in a different bitmap
+walkrgb
+e
+
