@@ -1,4 +1,4 @@
-#use as skript by: lyapunov.exe <walk.txt
+#use as skript by: lyapunov.exe <quickstart.txt
 load(01template
 setiter(250,500
 setposition(3.0,3.0,4.0,3.0,3.0,4.0
