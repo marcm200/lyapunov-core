@@ -20,7 +20,7 @@ This readme is organized as:
 
 ## (1) Quick start
 
-Compile the program in a C++ compiler, best with speed and math optimization flags on, and run it via (assuming the file is named lyapunov.exe throughout this document).
+Compile the program main.cpp in a C++ compiler, best with speed and math optimization flags on, and run it via (assuming the file is named lyapunov.exe throughout this document).
 
 `lyapunov.exe <quickstart.txt`
 
