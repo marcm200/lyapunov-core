@@ -135,7 +135,7 @@ Example usage can be found in walk.txt which can be used as a skript file (see q
 <table>
 <tr><td>WALKTILE(n,m)</td><td>Tiles the current rhomboid in n tiles horizontally and m tiles vertically and computes every one of them with the current settings (i.e. iteration number, color, image size etc.) and saves those seperately as `_walktile*` files.</td></tr>
 
-<tr><td>WALKRGB</td><td>Generates random RGB values to be put into the current color method (not changing the interval limits though) and saving the parameters and images. Additionally, if the subdirectory `colorcollection\` is present, for every `*.par` file therein its color method is loaded and applied to the current Lyapunov exponents in memory.</td></tr>
+<tr><td>WALKRGB</td><td>Generates random RGB values to be put into the current color method (not changing the interval limits though) and saving the parameters and images. Additionally, if the subdirectory `colorcollection\` is present, for every `*.par` file therein its color method is loaded and applied to the current Lyapunov exponents in memory.<br><b>NOTE: This command does not compute the image anew. It uses already available Lyapunov values in memory.</b></td></tr>
 
 <tr><td>WALKB(c,d,n)</td><td>Since almost every function coded has a parameter b, this is now iterated from [c..d] in equally spaced steps and an image is computed with the current loaded settings. Images, parameters and exponents are saved under `_walkb_*` files.</td></tr>
 
