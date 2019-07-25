@@ -16,7 +16,7 @@ setsize(128,128
 setiter(50,100
 walksection
 load(18template
-#no size change as the already loaded Lyapunov values are just saved in a different bitmap
+run
 walkrgb
 e
 
