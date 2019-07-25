@@ -2,6 +2,8 @@
 Text-menu based code to compute Lyapunov-value based images by Mario Markus' algorithm
 from Spektrum der Wissenschaft 1995
 
+<img src="./_examples.jpg">
+
 # Purpose of this code
 
 To calculate large Lyapunov diagrams and automatically explore parameters in a structured or randomized fashion.
